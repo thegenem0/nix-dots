@@ -1,17 +1,16 @@
 MKDIR=mkdir -p
 RMDIR=rm -rf
 LN=ln -vsf
-LNDIR=ln -vs
+LNDIR=ln -s
 CP=cp -r -v
 
 LOCAL_HOME=$(PWD)/home
-LOCAL_CONFIG=$(PWD)/$(XDGHOME)/.config
-LOCAL_SSH=$(PWD)/$(XDGHOME)/.ssh
+LOCAL_CONFIG=$(LOCAL_HOME)/.config
+LOCAL_SSH=$(LOCAL_HOME)/.ssh
 
 XDGHOME=$(HOME)
 XDGBASE=$(XDGHOME)/.config
 SSHBASE=$(XDGHOME)/.ssh
-
 
 .PHONY: all
 
@@ -82,7 +81,7 @@ zsh:
 starship:
 	@echo "Setting up starship..."
 	$(RM) $(XDGBASE)/.starship.toml
-	$(LN) $(LOCAL_CONFIG)/.starship.toml $(XDGBASE)/.starship.toml
+	$(LN) $(LOCAL_CONFIG)/starship.toml $(XDGBASE)/starship.toml
 
 ssh:
 	@echo "Setting up ssh..."
