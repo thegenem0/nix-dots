@@ -6,7 +6,7 @@
     isNormalUser = true;
     description = "thegenem0";
     extraGroups = [ "networkmanager" "input" "wheel" "video" "audio" "tss" ];
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
     packages = with pkgs; [
       spotify
       youtube-music

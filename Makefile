@@ -93,10 +93,15 @@ dev:
 	@echo "Setting up dev folders..."
 	$(MKDIR) $(LOCAL_HOME)/dev/personal
 	$(MKDIR) $(LOCAL_HOME)/dev/work
-	$(CP) $(LOCAL_HOME)/dev/personal/.gitconfig.personal $(LOCAL_HOME)/dev/personal/.gitconfig.personal
-	$(CP) $(LOCAL_HOME)/dev/personal/.gitconfig.work $(LOCAL_HOME)/dev/work/.gitconfig.work
+	$(CP) $(LOCAL_HOME)/dev/personal/.gitconfig.personal $(XDGHOME)/dev/personal/.gitconfig.personal
+	$(CP) $(LOCAL_HOME)/dev/personal/.gitconfig.work $(XDGHOME)/dev/work/.gitconfig.work
+
+wallpaper:
+	@echo "Setting up wallpaper..."
+	$(RMDIR) $(XDGBASE)/wallpaper
+	$(LN) $(LOCAL_HOME)/wallpaper $(XDGHOME)/wallpaper
 
 home:
 	@echo "Setting up home dots..."
-	$(LN) $(LOCAL_HOME)/.gitconfig $(XDGBASE)/.gitconfig
-	$(LN) $(LOCAL_HOME)/.nix-channels $(XDGBASE)/.nix-channels
+	$(LN) $(LOCAL_HOME)/.gitconfig $(XDGHOME)/.gitconfig
+	$(LN) $(LOCAL_HOME)/.nix-channels $(XDGHOME)/.nix-channels

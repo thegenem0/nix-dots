@@ -8,7 +8,7 @@
 
   outputs = { nixpkgs, ... } @ inputs:
   {
-    nixosConfigurations.nix-desktop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
@@ -33,14 +33,13 @@
         ./services.nix
         # ./gnome.nix
         ./hyprland.nix
-        ./environment-variables.nix
+        ./env-vars.nix
         ./bluetooth.nix
         ./networking.nix
         ./open-ssh.nix
         ./firewall.nix
         ./users.nix
         ./virtualisation.nix
-        ./programming-languages.nix
         ./langs.nix
         ./utils.nix
         ./terminal-utils.nix
