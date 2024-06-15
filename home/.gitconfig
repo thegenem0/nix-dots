@@ -1,0 +1,14 @@
+[includeIf "gitdir:~/dev/personal/"]
+	path = ~/dev/personal/.gitconfig.personal
+
+[includeIf "gitdir:~/dev/work/"]
+	path = ~/dev/work/.gitconfig.work
+
+[core]
+	excludesfile = ~/.gitignore
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true
