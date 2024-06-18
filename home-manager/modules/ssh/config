@@ -1,0 +1,12 @@
+Host github.com-thegenem0
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/thegenem0
+  AddKeysToAgent yes
+
+Host github.com-work
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/work
+  AddKeysToAgent yes
+

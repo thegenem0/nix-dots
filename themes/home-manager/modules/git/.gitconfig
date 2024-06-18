@@ -1,0 +1,14 @@
+[includeIf "gitdir:~/thegenem0/"]
+	path = ~/projects/.gitconfig.thegenem0
+
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig.work
+
+[core]
+	excludesfile = ~/.gitignore
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true

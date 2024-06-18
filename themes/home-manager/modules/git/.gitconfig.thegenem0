@@ -1,0 +1,10 @@
+[user]
+	email = nemethgergo02@gmail.com
+	name = thegenem0
+	signingkey = ~/.ssh/thegenem0.pub
+
+[github]
+	user = "thegenem0"
+
+[core]
+	sshCommand = "ssh -i ~/.ssh/thegenem0"
