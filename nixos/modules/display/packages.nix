@@ -6,10 +6,12 @@
     wl-clipboard
     cliphist
     hyprland
+    hyprlock
     seatd
     xdg-desktop-portal-hyprland
     waybar
     nwg-displays
     sddm
+    dunst
   ];
 }

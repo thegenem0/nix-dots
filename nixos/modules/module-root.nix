@@ -6,6 +6,7 @@
     ./system/networking.nix
     ./system/garbage-collection.nix
     ./system/usb.nix
+    ./system/security.nix
     # ./system/auto-upgrade.nix
 
     ./system-utils/packages.nix

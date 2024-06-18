@@ -20,12 +20,16 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
-
+  outputs = { 
+    self, 
+    nixpkgs, 
+    nixpkgs-stable, 
+    home-manager, 
+    ... 
+  }@inputs:
     let
       system = "x86_64-linux";
     in {
-
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {
         pkgs-stable = import nixpkgs-stable {
@@ -43,7 +47,9 @@
 
     homeConfigurations.thegenem0 = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
-      modules = [ ./home-manager/home.nix ];
+      modules = [
+        ./home-manager/home.nix 
+      ];
     };
   };
 }

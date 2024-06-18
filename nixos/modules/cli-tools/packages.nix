@@ -27,5 +27,6 @@
     lazygit
     bluez
     bluez-tools
+    ripgrep
   ];
 }

@@ -6,7 +6,6 @@
     imv
     dmenu
     screenkey
-    mako
     gromit-mpx
     grim
     grimblast

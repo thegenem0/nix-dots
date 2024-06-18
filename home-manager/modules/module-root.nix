@@ -10,5 +10,8 @@
 
     ./wms/hyprland.nix
     ./wms/waybar.nix
+    ./wms/dunst.nix
+    ./wlogout/wlogout.nix
+    ./rofi/default.nix
   ];
 }
