@@ -1,7 +1,7 @@
 [user]
 	email = nemethgergo02@gmail.com
 	name = thegenem0
-	signingkey = ~/.ssh/thegenem0.pub
+	signingkey = 5B6B60F00F78F3AAFB6B7F2D9C7A79F2462966E8
 
 [github]
 	user = "thegenem0"

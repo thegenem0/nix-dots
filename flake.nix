@@ -1,5 +1,5 @@
 {
-  description = "thegenem0's NixOS config";
+  description = "My system configuration";
 
   inputs = {
 
